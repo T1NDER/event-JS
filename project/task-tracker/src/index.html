@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Трекер задач</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Трекер задач</h1>
+    
+    <div class="add-task-section">
+      <input type="text" id="taskInput" placeholder="Введите название задачи..." class="task-input">
+      <span class="error-message" id="errorMessage">Введите текст задачи</span>
+    </div>
+    
+    <div class="tasks-container">
+      <div class="tasks-section">
+        <h2>Pinned</h2>
+        <div class="task-list" id="pinnedList"></div>
+      </div>
+      
+      <div class="tasks-section">
+        <h2>All Tasks</h2>
+        <div class="task-list" id="allTasksList"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
