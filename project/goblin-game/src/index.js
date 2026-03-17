@@ -53,7 +53,7 @@ class GameBoard {
       cell.style.left = pos.x + 'px';
       cell.style.top = pos.y + 'px';
       cell.dataset.index = index;
-      this.container.appendChild(cell);
+      this.container.append(cell);
       this.cells.push(cell);
     });
   }
@@ -120,7 +120,7 @@ class GoblinGame {
         cursor: url(${hammerCursor}), pointer;
       }
     `;
-    document.head.appendChild(style);
+    document.head.append(style);
   }
 
   startGame() {

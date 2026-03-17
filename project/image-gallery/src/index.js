@@ -83,11 +83,9 @@ class ImageView {
     deleteBtn.innerHTML = '×';
     deleteBtn.title = 'Удалить';
 
-    infoDiv.appendChild(nameSpan);
-    infoDiv.appendChild(deleteBtn);
-    imageCard.appendChild(imgElement);
-    imageCard.appendChild(infoDiv);
-    this.gallery.appendChild(imageCard);
+    infoDiv.append(nameSpan, deleteBtn);
+    imageCard.append(imgElement, infoDiv);
+    this.gallery.append(imageCard);
   }
 
   removeImageElement(id) {

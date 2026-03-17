@@ -87,7 +87,7 @@ class TaskView {
 
     tasks.forEach(task => {
       const taskElement = this.createTaskElement(task, true);
-      this.pinnedList.appendChild(taskElement);
+      this.pinnedList.append(taskElement);
     });
   }
 
@@ -105,7 +105,7 @@ class TaskView {
 
     tasks.forEach(task => {
       const taskElement = this.createTaskElement(task, false);
-      this.allTasksList.appendChild(taskElement);
+      this.allTasksList.append(taskElement);
     });
   }
 
@@ -132,9 +132,7 @@ class TaskView {
     deleteBtn.innerHTML = '×';
     deleteBtn.title = 'Удалить';
 
-    taskDiv.appendChild(titleSpan);
-    taskDiv.appendChild(pinToggle);
-    taskDiv.appendChild(deleteBtn);
+    taskDiv.append(titleSpan, pinToggle, deleteBtn);
 
     return taskDiv;
   }
